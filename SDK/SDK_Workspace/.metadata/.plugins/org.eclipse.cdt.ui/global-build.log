@@ -9273,3 +9273,3338 @@ Finished building: hello_world.elf.elfcheck
 10:36:00 **** Incremental Build of configuration Debug for project hello_world ****
 make all 
 make: Nothing to be done for `all'.
+11:08:41 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+Cannot run program "make": The directory name is invalid.
+
+11:08:41 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:08:43 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:09:24 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+Cannot run program "make": The directory name is invalid.
+
+11:09:24 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:09:25 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:11:44 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:11:57 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:12:01 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:12:01 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:12:02 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:12:08 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:12:14 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:12:14 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:12:14 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:12:19 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:13:21 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:13:21 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:13:22 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:13:27 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:16:34 **** Auto Build of project hello_world_bsp ****
+make -k all 
+'Finished building libraries'
+11:17:00 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:00 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:06 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:42 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+rm: cannot remove `hello_world.elf': Permission denied
+make: [clean] Greška 1 (ignorirana)
+' '
+11:20:42 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:20:42 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:20:52 **** Build of configuration Debug for project hello_world ****
+make all 
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:20:58 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:20:58 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:20:58 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:21:03 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3094	    268	   2088	   5450	   154a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:21:26 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:24:16 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:24:24 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:24:24 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:24:24 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:24:29 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:24:37 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:25:14 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:25:28 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:25:29 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:25:29 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:25:34 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:25:47 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:26:56 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:27:00 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:27:01 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:27:01 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:27:06 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:27:13 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:28:17 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:28:24 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:28:24 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:28:24 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:28:30 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3142	    268	   2088	   5498	   157a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:29:16 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:29:22 **** Clean-only build of configuration Debug for project hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o  ./src/helloworld.d ./src/platform.d ./src/vga_periph_mem.d ./src/vga_periph_mem_selftest.d  hello_world.elf.size  hello_world.elf.elfcheck  hello_world.elf
+' '
+11:29:22 **** Clean-only build of project hello_world_bsp ****
+make -k clean 
+rm -rf microblaze_0
+11:29:23 **** Build of project hello_world_bsp ****
+make -k all 
+libgen -hw ../basic_system_hw_platform/system.xml\
+	       -lp D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../basic_system_hw_platform/system.xml -lp
+D:/work/lprs2/2013_2014/Resene_vezbe/lab45/basic_system -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+11:29:28 **** Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building file: ../src/vga_periph_mem_selftest.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem_selftest.d" -MT"src/vga_periph_mem_selftest.d" -o "src/vga_periph_mem_selftest.o" "../src/vga_periph_mem_selftest.c"
+'Finished building: ../src/vga_periph_mem_selftest.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:29:39 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:30:44 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:30:53 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:31:32 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:31:42 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:32:00 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:32:21 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:32:28 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:32:45 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:32:56 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:33:27 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:33:35 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:33:55 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:34:01 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:34:19 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:34:27 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:38:25 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:39:35 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3254	    268	   2088	   5610	   15ea	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:39:46 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:40:21 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3274	    268	   2098	   5640	   1608	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:40:33 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:41:16 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3254	    268	   2088	   5610	   15ea	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:41:25 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:41:55 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3274	    268	   2098	   5640	   1608	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:42:12 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:43:28 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3250	    268	   2098	   5616	   15f0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:43:37 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:43:53 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:43:58 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:44:26 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3250	    268	   2098	   5616	   15f0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:44:31 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:44:45 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:44:52 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:45:50 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:45:56 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:47:59 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:5: warning: implicit declaration of function 'draw_square1' [-Wimplicit-function-declaration]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\student\Desktop\lab5-master\SDK\SDK_Workspace\hello_world\Debug/../src/helloworld.c:67: undefined reference to `draw_square1'
+collect2: ld returned 1 exit status
+make: *** [hello_world.elf] Greška 1
+11:48:10 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3518	    268	   2088	   5874	   16f2	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:48:17 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:48:50 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/vga_periph_mem.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/vga_periph_mem.d" -MT"src/vga_periph_mem.d" -o "src/vga_periph_mem.o" "../src/vga_periph_mem.c"
+'Finished building: ../src/vga_periph_mem.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:49:33 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3230	    268	   2088	   5586	   15d2	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:49:41 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:50:32 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3238	    268	   2088	   5594	   15da	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:50:40 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:51:15 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3238	    268	   2088	   5594	   15da	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:51:22 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:53:20 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3234	    268	   2098	   5600	   15e0	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:53:28 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:54:20 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3238	    268	   2088	   5594	   15da	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:54:26 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:55:13 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3238	    268	   2088	   5594	   15da	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:56:33 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3258	    268	   2098	   5624	   15f8	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:56:40 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:57:32 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:57:37 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:50:40 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:53:52 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:54:49 **** Auto Build of project hello_world_bsp ****
+make -k all 
+'Finished building libraries'
+10:54:53 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:58:44 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:9: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3238	    268	   2088	   5594	   15da	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+10:58:50 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:59:05 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:9: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3258	    268	   2098	   5624	   15f8	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+10:59:09 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:59:21 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:9: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3258	    268	   2098	   5624	   15f8	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+10:59:28 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+10:59:39 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:51:9: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3258	    268	   2098	   5624	   15f8	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+10:59:43 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:01:11 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3318	    268	   2088	   5674	   162a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:01:18 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:02:26 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:10: warning: 'i' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3302	    268	   2088	   5658	   161a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:02:30 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:02:52 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3306	    268	   2098	   5672	   1628	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:02:56 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:05:10 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:05:14 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:05:55 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:05:59 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:06:25 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:06:30 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:07:04 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:07:10 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:07:20 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:07:26 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:07:38 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:07:44 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:08:01 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:08:08 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:08:24 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:08:30 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:08:45 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3278	    268	   2088	   5634	   1602	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:08:49 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:10:59 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3314	    268	   2098	   5680	   1630	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:11:03 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:11:17 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3318	    268	   2088	   5674	   162a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:11:21 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:11:28 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3318	    268	   2088	   5674	   162a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:11:33 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:11:48 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3318	    268	   2088	   5674	   162a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:11:52 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:16:17 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:16:23 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:17:12 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:17:17 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:17:59 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:18:02 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:18:13 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:18:17 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:19:00 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3346	    268	   2098	   5712	   1650	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:19:05 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:19:20 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:08 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:20:13 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:55 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:20:59 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:21:28 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3346	    268	   2098	   5712	   1650	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:21:34 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:22:14 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:22:18 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:23:04 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3350	    268	   2088	   5706	   164a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:23:09 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:23:23 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3346	    268	   2098	   5712	   1650	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:23:26 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:23:52 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3350	    268	   2088	   5706	   164a	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:23:55 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
+11:24:17 **** Auto Build of configuration Debug for project hello_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../hello_world_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: hello_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../hello_world_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hello_world.elf"  ./src/helloworld.o ./src/platform.o ./src/vga_periph_mem.o ./src/vga_periph_mem_selftest.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hello_world.elf  |tee "hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3478	    268	   2088	   5834	   16ca	hello_world.elf
+'Finished building: hello_world.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck hello_world.elf -hw ../../basic_system_hw_platform/system.xml -pe microblaze_0  |tee "hello_world.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../basic_system_hw_platform/system.xml -pe
+microblaze_0 hello_world.elf 
+
+ELF file	: hello_world.elf
+elfcheck passed.
+'Finished building: hello_world.elf.elfcheck'
+' '
+11:24:23 **** Incremental Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
